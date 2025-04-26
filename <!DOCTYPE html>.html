@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html>
+        <head> 
+            <link rel="stylesheet" href="style.css" />
+        </head> 
+        <body>
+
+            <h1 class="hover-text"> Cool text features </h1>
+            <p> For cool websites </p>        
+            <h1> We are working hard </h1>
+
+            <img
+            src="https://media3.giphy.com/media/lJNoBCvQYp7nq/200w.gif?cid=6c09b952g5xdf9uex6iw5ebitr32sv9icnshyrjlu4eq7hrd&ep=v1_gifs_search&rid=200w.gif&ct=g"
+            />
+            
+            <p class="hover-text">Hover over me!</p>
+
+            <p id="typewriter"></p>
+
+            <script>
+            const text = "I am being typed!";
+            let index = 0;
+            function typeEffect() {
+                if (index < text.length) {
+                    document.getElementById("typewriter").innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(typeEffect, 50);
+                }
+            }
+            typeEffect();
+            </script>
+
+            <p class="moving-text">I'm moving across the screen :D</p>
+
+            <p id="switchText" onclick="changeText()">Click me!</p>
+            <script>
+                function changeText() {
+                    document.getElementById("switchText").innerHTML = "Do I deserve boba?";
+                }
+                </script>
+        </body>
+
+</html>

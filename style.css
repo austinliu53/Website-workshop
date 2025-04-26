@@ -1,0 +1,32 @@
+img {
+    width: 100px
+
+}
+body { 
+    text-align: center ;
+    font-family: 'Helvetica', Times, serif;
+    background: black;
+    color: white;
+}
+
+.hover-text {
+    transition: color 0.5s;
+}
+
+.hover-text:hover {
+    color: yellow;
+}
+
+.moving-text {
+    position: relative;
+    animation: move 5s infinite alternate;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
